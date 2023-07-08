@@ -8,85 +8,96 @@
 </head>
 <body>
     <div class="main-content">
+        <nav>
+            <button onclick="window.location.href='#contacts'">Contacts</button>
+            <button onclick="window.location.href='#contacts'">Skills</button>
+            <button onclick="window.location.href='#about'">About</button>
+            <button onclick="window.location.href='#code'">Code</button>
+            <button onclick="window.location.href='#prof'">ProfExp</button>
+            <button onclick="window.location.href='#adu'">Aducation</button>
+            <button onclick="window.location.href='#link'">GitHab's</button>
+        </nav>
         <header class="color">
             <h1>CV#3. CV. Cross-Check</h1>
             <hr>
             <h2>Anton Filuta</h2>
             <img src="images/IMG_0372.jpeg" alt="my-foto" id="avatar">
         </header>
-        <nav>
-            <button onclick="window.location.href = 'contacts'">Contacts</button>
-            <button onclick="window.location.href = 'about'">About me</button>
-            <button onclick="window.location.href = 'skills'">Skills</button>
-            <button onclick="window.location.href = 'code'">Code</button>
-            <button onclick="window.location.href = 'prof'">Prof-Experience</button>
-            <button onclick="window.location.href = 'adu'">Aducation</button>
-            <button onclick="window.location.href = 'link'">GitHab's link</button>
-        </nav>
         <main>
-          <section id="contacts" class="color">
-            <h3>My contacts</h3>
-            <ul>
-              <li>My phone: +375299277775</li>
-              <li>My inst: antonfiluta</li>
-              <li>My email: antonfiluta2.0@mail.ru</li>
-            </ul>
-          </section>
-          <section id="about">
-            <h3>A little from my life</h3>
-            <p>I am 16 years old. Soon I will go to 11th class. I really like Frontend and create different sites. Frontend is my hobby.</p>
-            <p>I already created three sites. Sites about Phisic, about English and about beuty.</p>
-          </section>
-          <section id="skills" class="color">
-            <h3>My skills</h3>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JS</li>
-            </ul>
-          </section>
-          <section id="code">
-            <h3>My code</h3>
-            <pre>
-              <code>
-                function myFunc(theObject) {
-                theObject.make = 'Toyota';
-                }
-              
-                var mycar = {make: 'Honda', model: 'Accord', year: 1998};
-                var x, y;
-              
-                x = mycar.make;
-              
-                myFunc(mycar);
-                y = mycar.make;</code>
-            </pre>
-          </section>
-          <section id="prof" class="color">
-            <h3>My professional experience</h3>
-            <p>I am still a student and have not work yet</p>
-            <ul>
-                <h4>But i have some little project, tap to see</h4>
-                <li><a href="https://antonfiluta.github.io/rsschool-cv/">My first html in RS-School</a></li>
-                <li><a href="https://antonfiluta.github.io/rsschool-cv/cv">My first CV</a></li>
-                <li>JS</li>
+          <section id="contacts">
+            <div class="box">
+              <h3>My contacts</h3>
+              <ul>
+                <li>My phone: +375299277775</li>
+                <li>My inst: antonfiluta</li>
+                <li>My email: antonfiluta2.0@mail.ru</li>
               </ul>
+            </div>
+            <div class="box" >
+                <h3>My skills</h3>
+                <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JS</li>
+                </ul>
+              </div>
           </section>
-          <section id="adu">
-            <h3>My aducation</h3>
-            <ul>
-              <li>10 years in school</li>
-              <li>MIMO</li>
-              <li>Duolingo</li>
-              <li>Courses in YouTube</li>
-            </ul>
+          <section id="about" class="color">
+            <div class="box">
+              <h3>A little from my life</h3>
+              <p>I am 16 years old. Soon I will go to 11th class. I really like Frontend and create different sites. Frontend is my hobby.</p>
+              <p>I already created three sites. Sites about Phisic, about English and about beuty.</p>
+            </div>
+          </section>
+          <hr>
+          <section id="code" class="color">
+            <div class="box">
+            <h3>My code</h3>
+              <pre>
+                <code>
+function darkMode() {
+
+const modeDark = 'dark.css';
+const modeLight = 'light.css';
+let el = document.querySelecor('link');
+
+if (el.href === modeDark) {
+    el.href = modeLight;
+} else {
+    el.href = modeDark;
+}}              </code>
+              </pre>
+            </div>
+          </section>
+          <section id="prof">
+            <div class="box">
+              <h3>My professional experience</h3>
+              <p>I am still a student and have not work yet</p>
+              <p>But i have some little project, tap to see</p>
+              <ul>
+                <li><a href="https://antonfiluta.github.io/rsschool-cv/" title="link">My first html in RS-School</a></li>
+                <li><a href="https://antonfiluta.github.io/rsschool-cv/cv" title="link">My first CV</a></li>
+                <li><a href="#code" title="link">JS</a></li>
+              </ul>
+            </div>
+          </section>
+          <section id="adu" class="color">
+            <div class="box">
+              <h3>My aducation</h3>
+              <ul>
+                <li>10 years in school</li>
+                <li>MIMO</li>
+                <li>Duolingo</li>
+                <li>Courses in YouTube</li>
+              </ul>
             <p>My english level is A2</p>
+            </div>
           </section>
         </main>
-        <footer id="link" class="color">
-            <p><a href="https://github.com/antonfiluta">MY GITHAB</a></p>
+        <footer id="link">
+            <p><a href="https://github.com/antonfiluta" title="link">MY GITHAB</a></p>
             <p>Date: 2023</p>
-            <p style="background-color: azure;"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_school_photo" width="100" height="100"></a></p>
+            <p style="background-color: azure;"><a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="rs_school_photo" width="100" height="100" title="link"></a></p>
         </footer>
     </div>
 </body>
